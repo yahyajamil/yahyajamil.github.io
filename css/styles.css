@@ -390,7 +390,13 @@ body {
   background-color: #7F56FD;
   font-family: Roboto-Light;
   color: #fff;
+  transition: all .2s ease-in;
 }
+
+.button--colorful:hover {
+  background-color: #5F3BD9;
+}
+
 
 .button--default {
   color: #455a64;
@@ -408,7 +414,6 @@ body {
   display: inline-block;
   margin-top: 40px;
 }
-
 
 .skill--bg {
   background: url("../assets/images/skill-background.png") no-repeat;
@@ -496,7 +501,6 @@ body {
   margin-top: 5px;
   font-weight: bold;
 }
-
 
 .portfolio__single-section {
   position: relative;
@@ -607,7 +611,6 @@ body {
   align-items: center;
 }
 
-
 .footer--bg {
   background-color: #27353B;
 }
@@ -657,4 +660,51 @@ body {
 .fa {
   font-size: 18px;
   margin: 0 8px;
+}
+
+.load-more-btn {
+  border: 0;
+  outline: 0;
+  margin-bottom: 1.25rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #6741d8;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
 }

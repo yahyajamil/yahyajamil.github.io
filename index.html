@@ -11,10 +11,14 @@
   <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" href="/assets/images/yj.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/yj.jpg" type="fav-icon">
 </head>
 
 <body>
+  <div id="loader" class="loader-container">
+    <div class="loader"></div>
+  </div>
+
   <div id="content-wrapper">
     <header class="header header--bg" id="Home">
       <div class="header__container">
@@ -45,7 +49,7 @@
             <span href="" class="typewrite" data-period="2000" data-type='["YAHYA JAMIL"]'>
               <span class="wrap"></span>
             </span>
-          </h1>                   
+          </h1>
           <ul class="header__content__sub-title">
             <li>FRONT END DEVELOPER</li>
           </ul>
@@ -71,11 +75,14 @@
             <div class="col-md-4">
               <div class="about__image">
                 <img src="assets/images/pic.jpg" class="img-rounded" alt="" width="300" height="400">
-                
+
               </div>
             </div>
             <div class="col-md-8 about__content">
-              <p class="about__description"> Hi, I'm Yahya Jamil, a 19-year-old Front-End Developer based in Tehran, Iran. Specializing in React.js, Bootstrap, Tailwind CSS, and jQuery, Passionate about continuous learning, I'm eager to expand my experiences and also I'm passionate about crafting engaging and responsive web experiences. Eager to contribute innovative solutions.</p>
+              <p class="about__description"> Hi, I'm Yahya Jamil, a 19-year-old Front-End Developer based in Tehran,
+                Iran. Specializing in React.js, Bootstrap, Tailwind CSS, and jQuery, Passionate about continuous
+                learning, I'm eager to expand my experiences and also I'm passionate about crafting engaging and
+                responsive web experiences. Eager to contribute innovative solutions.</p>
               <div class="row row--margin-top">
                 <div class="col-md-4">
                   <p class="about__bio"><strong>NAME :</strong> Yahya Jamil</p>
@@ -88,7 +95,8 @@
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <a class="button button--colorful button--margin" href="/assets/cv/YahyaJamil.pdf" download="YahyaJamil.pdf">DOWNLOAD CV</a>
+                  <a class="button button--colorful button--margin" href="/assets/cv/YahyaJamil.pdf"
+                    download="YahyaJamil.pdf">DOWNLOAD CV</a>
                 </div>
                 <div class="col-md-4">
                   <a class="button button--colorful button--margin contact" href="#">CONTACT ME</a>
@@ -200,162 +208,38 @@
           <h2 class="page-section__title">MY PORTFOLIO</h2>
           <img class="page-section__title-style" src="assets/images/title-style.png" alt="title style">
           <p class="page-section__paragraph">Explore My Portfolio & Get To Know My Projects</p>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-a category-b category-c" data-order="1">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-1.png" alt="Instagram">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Instagram Form</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil-instagram.netlify.app/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-a category-c" data-order="2">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-2.png" alt="Snapp Food">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Snapp Food</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/snappFood/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-c" data-order="3">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-3.png" alt="Tapsi">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Tapsi</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/TapsiHome/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-b category-d" data-order="4">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-4.png" alt="Calculator App">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Calculator App</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/Calculator/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-b category-d" data-order="5">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-5.png" alt="Bingo">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Bingo</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/Bingo/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-d" data-order="6">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-6.png" alt="Todo List">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Todo List</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/TodoList-React/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row gutters-40">
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-b category-d" data-order="4">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-7.png" alt="Car Shop">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Car Shop</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/CarShop/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-b category-d" data-order="5">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-8.png" alt="Weather App">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Weather App</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/weatherApp/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio__single-section mix category-d" data-order="6">
-                <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-9.png" alt="Text To Speech App">
-                <div class="portfolio__single-section__overlay">
-                  <div class="overlay-content">
-                    <h4>Text To Speech App</h4>
-                    <p>Developer : Yahya Jamil</p>
-                  </div>
-                  <div class="portfolio__single-section__demo">
-                    <a href="https://yahyajamil.github.io/TextToSpeech/"><span class="portfolio__single-section__demo-text">Live Demo</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="portfolio-container"></div>
+          <div class="center">
+            <button class="load-more-btn button button--colorful">Load More</button>
           </div>
           <div class="source__code">
-            <span>* Source Code is Available on <a href="https://github.com/yahyajamil?tab=repositories" target="_blank">GitHub<i class="fa fa-github m-0"></i></a></span>
+            <span>* Source Code is Available on <a href="https://github.com/yahyajamil?tab=repositories"
+                target="_blank">GitHub<i class="fa fa-github m-0"></i></a></span>
           </div>
         </div>
       </div>
     </section>
 
-   
+
     <footer class="footer footer--bg" id="Contact">
       <div class="container text-center">
         <img src="assets/images/logo.png" alt="Yahya Jamil" width="400" height="150">
         <ul class="footer__contact-information">
-          <li><a href="#"><i class="material-icons">phone</i> +9809128093638</a></li>
-          <li><a href="#"><i class="material-icons">email</i> yahyajamil3642@gmail.com</a></li>
           <li><a href="#"><i class="material-icons">location_on</i> Tehran, Iran</a></li>
+          <li><a href="tel:+9809128093638"><i class="material-icons">phone</i> +9809128093638</a></li>
+          <li><a href="mailto:yahyajamil3642@gmail.com" type="email"><i
+                class="material-icons">email</i>yahyajamil3642@gmail.com</a></li>
         </ul>
       </div>
       <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
       <div class="container text-center">
         <div class="social-icon">
           <ul>
-            <li><a href="https://www.linkedin.com/in/yahya-jamil/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/yahya-jamil/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
             <li><a href="https://instagram.com/yahyajamil1/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a href="https://github.com/yahyajamil/" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://wa.me/09128093638" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
           </ul>
         </div>
         <p class="footer__paragraph"> &copy; All Rights Reserved.</p>
@@ -363,11 +247,12 @@
     </footer>
   </div>
 
-  
+
   <script src="assets/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/script-jquery.js"></script>
+  <script src="js/portofilo.js"></script>
 </body>
 
 </html>

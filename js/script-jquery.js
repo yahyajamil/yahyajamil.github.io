@@ -17,9 +17,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-
     $(".navbar-toggle").on("click", function () {
         $(this).toggleClass("mixitup-control-active");
     });
@@ -60,7 +57,5 @@ $(document).ready(function () {
             scrollTop: $("#Contact").offset().top
         }, 2000);
     });
-
-
 
 });
