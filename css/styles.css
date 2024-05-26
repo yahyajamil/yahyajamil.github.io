@@ -169,6 +169,7 @@ a:focus {
 
 .navbar {
   padding-top: 30px;
+  padding: 15px;
   z-index: 999;
   border-radius: 0 0 8px 8px;
   transition: top 0.5s ease;
@@ -178,7 +179,6 @@ a:focus {
   background-color: #fff !important;
   position: fixed;
   width: 100%;
-  padding: 15px;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5) !important;
   top: 0 !important;
 }
@@ -195,8 +195,8 @@ a:focus {
 }
 
 .navbar-header {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media(max-width:512px) {
@@ -211,8 +211,8 @@ a:focus {
 
 .icon-bar {
   display: block;
-  width: 30px;
-  height: 2px;
+  width: 25px !important;
+  height: 3px !important;
   margin: 3px 0;
   transition: 0.4s;
   background-color: #fff !important;
@@ -227,17 +227,12 @@ a:focus {
 }
 
 .navbar-toggle.mixitup-control-active .icon-bar:nth-child(1) {
-  transform: rotateZ(-45deg);
+  transform: rotate(-45deg) translate(-5px,4px);
 }
 
 .navbar-toggle.mixitup-control-active .icon-bar:nth-child(3) {
-  transform: rotateZ(45deg);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
-
-.navbar-toggle.mixitup-control-active .icon-bar:nth-child(3) {
-  transform-origin: 120% -175%;
-}
-
 
 .navbar-brand span {
   font-size: 25px;
@@ -505,15 +500,13 @@ body {
 .portfolio__single-section {
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
 }
 
 .portfolio__single-section__image {
-  width: 350px;
+  width: 100%;
   height: 300px !important;
   display: block;
-  border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .portfolio__single-section h4 {
@@ -531,10 +524,8 @@ body {
 }
 
 .portfolio__single-section__demo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .portfolio__single-section__demo-text {
@@ -562,8 +553,7 @@ body {
   opacity: 0;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: rgba(133, 91, 249, .9);
-  border-radius: 10px;
+  background-color: #855bf9e6;
 }
 
 .portfolio__single-section:hover .portfolio__single-section__overlay {
@@ -578,16 +568,27 @@ body {
   margin: 0 4px;
 }
 
-.gutters-40.row {
-  margin-right: -20px;
-  margin-left: -20px;
+.portfolio-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
 }
 
-.gutters-40>[class^="col-"],
-.gutters-40>[class^="col-"] {
-  padding-right: 20px;
-  padding-left: 20px;
+@media(max-width: 1200px) {
+  .portfolio-container {
+    grid-template-columns: auto auto;
+  }
 }
+
+@media(max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: auto;
+  }
+}
+
 
 @media(max-width: 991px) {
   .portfolio__single-section {
@@ -598,17 +599,13 @@ body {
 
 }
 
-
 .footer {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .footer .container {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 
 .footer--bg {
@@ -668,21 +665,13 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
 .loader-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: rgba(255, 255, 255);
   z-index: 1000;
 }
 
@@ -707,4 +696,51 @@ body {
 
 .hidden {
   display: none;
+}
+
+.frame {
+  width: 350px;
+  border: 2px solid #27353B;
+  border-radius: .35rem;
+}
+
+@media(max-width:450px){
+  .frame {
+    width: 325px;
+  }
+
+  .searchbar {
+    padding: .25rem 10rem .15rem .25rem;
+  }
+}
+.frame p {
+  margin: 0;
+}
+
+.head-frame {
+  padding: .65rem 0;
+  border-bottom: 2px solid #27353B;
+}
+
+.head-frame i {
+  color: #27353B;
+}
+.searchbar {
+  padding: .25rem 15rem .15rem .25rem;
+  border: 1.5px solid #27353B;
+  border-radius: .25rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigate p:first-child {
+  margin-right: 0px !important;
+}
+
+.bar-navigate p:first-child {
+  margin-right: 0px !important;
 }
